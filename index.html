@@ -14,12 +14,6 @@
     <link rel="Taiwan Icon" href="./1280px-Taiwan-icon.svg.png" />
     <title>Taiwan ecnomic development</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
     <script
       type="text/javascript"
       src="https://www.gstatic.com/charts/loader.js"
@@ -30,15 +24,19 @@
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ["Year", "Expenses"],
-          ["2004", 400],
-          ["2005", 460],
-          ["2006", 1120],
-          ["2007", 540],
+          ["Year", "GDP"],
+          ["1951", 154],
+          ["1961", 161],
+          ["1971", 451],
+          ["1981", 2720],
+          ["1991", 9125],
+          ["2001", 13397],
+          ["2011", 20866],
+          ["2021", 32940],
         ]);
 
         var options = {
-          title: "Company Performance",
+          title: "台灣每十年平均每人ＧＤＰ變化圖",
           curveType: "function",
           legend: { position: "bottom" },
         };
@@ -52,7 +50,7 @@
     </script>
     <link rel="stylesheet" href="twicon/twicon.css" />
 
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles.css/style.css" />
   </head>
   <body>
     <header>
@@ -62,11 +60,11 @@
     <nav>
       <ul>
         <li>
-          <a href="#">首頁</a>
-          <a href="#">農業改革</a>
-          <a href="#">工業改革</a>
-          <a href="#">經濟起飛</a>
-          <a href="#">關於作者</a>
+          <a href="#"><i class="twicon-president-office"></i> 首頁</a>
+          <a href="#"><i class="twicon-l-wemo"></i> 農業改革</a>
+          <a href="#"><i class="twicon-taipei101"></i> 工業改革</a>
+          <a href="#"><i class="twicon-high-speed-rail"></i> 經濟起飛</a>
+          <a href="#"><i class="twicon-black-bear"></i> 關於作者</a>
         </li>
       </ul>
     </nav>
@@ -81,7 +79,7 @@
           “輕工業”。政府開始幫助建立小工廠，生產紡織品，鞋和紙。這幫助台灣準備轉移到
           “重工業”。為了刺激投資，政府鼓勵世界各地的投資者在台灣港口建立工廠。這次是發展的第三步。該網站將討論台灣發生了什麼，台灣的政策和變化以及誰來幫助並使所有這些事情發揮作用。
         </p>
-        <div id="curve_chart" style="width: 900px; height: 500px"></div>
+        <div id="curve_chart"></div>
       </div>
       <div class="right">
         <h3>台灣經濟發展小知識：你知道台灣在哪裡嗎？</h3>
